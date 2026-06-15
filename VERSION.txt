@@ -1,0 +1,3 @@
+v26d Background Launcher
+Port: 8600
+InstallDir: %LOCALAPPDATA%\OutViewerStable
