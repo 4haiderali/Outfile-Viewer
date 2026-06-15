@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Installer output
+installer_output/
+
+# Logs
+*.log
+out_viewer_server.log
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
