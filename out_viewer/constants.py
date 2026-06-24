@@ -37,7 +37,7 @@ SUMMARY_ALIGNMENT_INDEX_NAMES = INDEX_NAMES - {"time"}
 #: App identity, shared by the title, sidebar caption and self-audit.
 #: The .bat installer keeps its own explicit marker string as a deliberate,
 #: separate safety check -- see OutViewer_Install_Update_Run.bat.
-APP_VERSION = "v1.26"
-APP_RELEASE_NAME = "Local Host"
-APP_TITLE = f"Outfile (.out) Viewer — {APP_VERSION} {APP_RELEASE_NAME}"
+APP_VERSION = "v1.0.1"
+APP_RELEASE_NAME = "Desktop"
+APP_TITLE = f"Outfile Viewer {APP_VERSION} | {APP_RELEASE_NAME}"
 STABLE_PORT = 8600
