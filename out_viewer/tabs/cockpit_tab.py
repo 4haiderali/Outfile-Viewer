@@ -19,7 +19,7 @@ from ..session_data import get_session_table
 
 
 def render(ctx) -> None:
-    st.subheader("Engineering Cockpit")
+    st.subheader("Results Overview")
 
     snap = study_snapshot(ctx.parsed, ctx.tables, ctx.current_name)
     c1, c2, c3, c4 = st.columns(4)
@@ -44,7 +44,7 @@ def render(ctx) -> None:
 
     st.markdown("#### Recommended Next Steps")
     for step in recommended_next_steps(ctx.parsed, ctx.tables, ctx.file_count):
-        st.write(f"✅ {step}")
+        st.write(f"âœ… {step}")
 
     if primary_df is not None and risk_df is not None:
         st.markdown("#### Variable Risk Ranking")
@@ -66,7 +66,7 @@ def render(ctx) -> None:
 
         st.markdown("#### Multivariate Outlier Snapshot")
         st.caption("A quick top-12 view based on every numeric analysis column. For a configurable, deeper "
-                   "dive (choose columns, see PCA loadings and the projection plot), use Analysis → Outliers & Ranking.")
+                   "dive (choose columns, see PCA loadings and the projection plot), use Analysis â†’ Outliers & Ranking.")
         outliers = multivariate_outliers(primary_df)
         if outliers.empty:
             st.info("Need at least two numeric analysis columns and three complete rows for multivariate outliers.")
