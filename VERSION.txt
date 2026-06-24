@@ -1,3 +1,4 @@
-v26d Background Launcher
-Port: 8600
-InstallDir: %LOCALAPPDATA%\OutViewerStable
+## v1.0.1
+- Renamed "Cockpit" tab to "Overview" for clarity
+- Updated app title format to "Outfile Viewer v1.0.1 | Desktop"
+- Switched to semantic versioning (previously internal build numbering)
