@@ -1,6 +1,7 @@
 # 📊 Outfile Viewer
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![Version](https://img.shields.io/badge/Version-1.0.1-orange)](https://github.com/4haiderali/Outfile-Viewer/releases)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.35%2B-red)](https://streamlit.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/4haiderali/Outfile-Viewer/blob/main/LICENSE)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-0078d4)](https://github.com/4haiderali/Outfile-Viewer)
@@ -38,7 +39,7 @@ Instead of manually scrolling through thousands of lines of raw simulation outpu
 1. Click **"Load sample demo file"** in the sidebar to see sample data
 2. Or upload your own `.out`, `.txt`, `.log`, or `.dat` file
 3. Explore the tabs:
-   - **Cockpit** — Risk summary & key metrics at a glance
+   - **Overview** — Risk summary & key metrics at a glance
    - **Data** — Browse tables and raw data
    - **Analysis** — Derived metrics and trends
    - **Compliance** — Run compliance checks
@@ -74,7 +75,7 @@ Text-based output files with similar structure. The parser attempts to extract:
 
 | Tab | What It Does |
 |-----|-------------|
-| **Cockpit** | Executive summary: risk score, key metrics, status indicators |
+| **OVerview** | Executive summary: risk score, key metrics, status indicators |
 | **Data** | Browse parsed tables, view raw data, inspect structure |
 | **Analysis** | Trend analysis, statistics, aggregations, derived columns |
 | **Derived & Units** | Create calculated columns, override unit definitions |
@@ -124,6 +125,7 @@ streamlit run app.py
 ```
 
 The app will start at `http://localhost:8501` (Streamlit's default dev port).
+The app runs entirely on your machine. No data is sent externally.
 
 **[Full Development Guide →](DEVELOPMENT.md)**
 
@@ -136,7 +138,7 @@ Outfile-Viewer/
 ├── app.py                      # Main Streamlit entry point
 ├── launcher.py                 # Windows desktop app launcher
 ├── out_viewer/                 # Core application package
-│   ├── tabs/                   # Analysis tabs (cockpit, data, etc.)
+│   ├── tabs/                   # Analysis tabs (Overview, data, etc.)
 │   ├── context.py              # Shared application state (AppContext)
 │   ├── constants.py            # App configuration
 │   ├── session_data.py         # File parsing & session management
