@@ -9,7 +9,7 @@ only provides the one-line descriptions for the optional help expander.
 """
 
 TAB_DESCRIPTIONS = {
-    "Cockpit": "Snapshot, plain-English summary, narrative findings, risk ranking, fingerprint, and multivariate outlier snapshot.",
+    "Overview": "Snapshot, plain-English summary, narrative findings, risk ranking, fingerprint, and multivariate outlier snapshot.",
     "Data": "Detected summary, main tables, PDF/probability tables, and manual table extraction.",
     "Analysis": "Statistics, distribution diagnostics, outliers & ranking (incl. PCA), and dynamic charts.",
     "Derived & Units": "Add derived columns from formulas, and tag units for analysis columns.",
