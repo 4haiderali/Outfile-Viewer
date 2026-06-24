@@ -39,13 +39,13 @@ from out_viewer.visuals import memory_summary_table
 from out_viewer.workspace import read_workspace_payload
 
 
-st.set_page_config(page_title=f".out Viewer - {APP_VERSION}", layout="wide")
+st.set_page_config(page_title=f"Outfile Viewer - {APP_VERSION}", layout="wide")
 inject_theme()
 
 st.title(APP_TITLE)
-st.caption(f"{APP_VERSION} · stable port {STABLE_PORT}")
+st.caption(f"{APP_VERSION} Â· stable port {STABLE_PORT}")
 render_hero(
-    "Analysis Cockpit",
+    "Results Overview",
     "Upload one or more .out-style files to get a plain-English summary, risk ranking, "
     "compliance checks, comparisons, and exportable reports.",
 )
@@ -75,7 +75,7 @@ with st.sidebar:
         for tab_name, description in TAB_DESCRIPTIONS.items():
             if tab_name == "Admin" and not show_admin_tools:
                 continue
-            st.markdown(f"**{tab_name}** — {description}")
+            st.markdown(f"**{tab_name}** â€” {description}")
 
     st.divider()
     if st.button("Load sample demo file"):
@@ -161,11 +161,11 @@ ctx = AppContext(
     file_history=st.session_state["file_history"],
 )
 
-st.caption(f"Loaded: `{current_name}` — {len(ctx.file_bytes):,} bytes — {len(parsed['lines']):,} lines")
+st.caption(f"Loaded: `{current_name}` â€” {len(ctx.file_bytes):,} bytes â€” {len(parsed['lines']):,} lines")
 
 
 TAB_MODULES = [
-    ("Cockpit", cockpit_tab),
+    ("Overview", cockpit_tab),
     ("Data", data_tab),
     ("Analysis", analysis_tab),
     ("Derived & Units", derived_tab),
