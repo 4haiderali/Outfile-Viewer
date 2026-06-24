@@ -2,18 +2,22 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.35%2B-red)](https://streamlit.io/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/4haiderali/Outfile-Viewer/blob/main/LICENSE)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-0078d4)](https://github.com/4haiderali/Outfile-Viewer)
 
-> **Transform engineering output files into actionable insights.** Parse `.out`, `.txt`, `.log`, and `.dat` files with one-click analysis, risk ranking, compliance checks, and exportable reports.
+A desktop application for parsing and visualising PSCAD/EMTDC simulation output files (`.out`), built for power system engineers who work with large volumes of simulation results.
+
+PSCAD generates `.out` files containing hundreds of channels across multiple simulation runs. Outfile Viewer replaces manual inspection with an interactive interface — load files, select channels, plot waveforms, compare runs, and export to Excel, all without touching the raw text.
+
+Also supports `.txt`, `.log`, and `.dat` output files from other engineering simulation tools.
 
 ## 🎯 What It Does
 
-Outfile Viewer is a **desktop application** that automates the tedious task of parsing and analyzing engineering simulation output files. Instead of manually scrolling through thousands of lines of raw text:
+Instead of manually scrolling through thousands of lines of raw simulation output:
 
 ✅ **Automatic Parsing** — Extracts tables, metadata, statistics, and diagnostics  
-✅ **Plain-English Summary** — Get instant risk rankings and compliance status  
-✅ **Multi-File Comparison** — Compare results across simulations side-by-side  
+✅ **Waveform Plotting** — Select and plot any channel from `.out` files interactively  
+✅ **Multi-File Comparison** — Compare results across simulation runs side-by-side  
 ✅ **Data Exploration** — Filter, search, and derive new columns on the fly  
 ✅ **Export Reports** — Generate Excel reports with charts and analysis  
 ✅ **Full Privacy** — Everything runs locally on your machine (no cloud, no telemetry)
